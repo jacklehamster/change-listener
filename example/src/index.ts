@@ -1,3 +1,3 @@
-import { Hello } from "bun-template";
+import { ChangeNotifier } from "change-listener";
 
-export { Hello };
+export { ChangeNotifier };

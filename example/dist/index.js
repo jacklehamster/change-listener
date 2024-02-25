@@ -1,9 +1,21 @@
-// /Users/vincent/bun-template/example/node_modules/bun-template/dist/index.js
-class e {
-  static hello() {
-    return "Hello World!";
+// /Users/vincent/change-listener/example/node_modules/change-listener/dist/index.js
+class p {
+  d;
+  listeners = new Set;
+  constructor(d) {
+    this.elem = d;
+  }
+  addChangeListener(d) {
+    return this.listeners.add(d), this;
+  }
+  removeChangeListener(d) {
+    this.listeners.delete(d);
+  }
+  onChange() {
+    for (let d of this.listeners)
+      d.onChange(this.elem);
   }
 }
 export {
-  e as Hello
+  p as ChangeNotifier
 };
