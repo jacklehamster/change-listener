@@ -2,7 +2,7 @@
   "name": "change-listener",
   "module": "src/index.ts",
   "description": "Simple interface for notifying when an element change.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "bun",
     "bunjs",
