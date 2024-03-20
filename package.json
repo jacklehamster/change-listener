@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/jacklehamster/change-listener.git"
   },
-  "homepage": "<fill in homepage>",
+  "homepage": "https://jacklehamster.github.io/change-listener/",
   "author": {
     "name": "Jack Le Hamster",
     "email": "jacklehamster@gmail.com"
@@ -36,10 +36,9 @@
     "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
     "build:example": "cd example && bun i && bun run build && cd ..",
     "example": "cd example && bun start && cd ..",
-    "make-repo-ssh": "./make-repo-ssh.sh",
     "fix-package-name": "npm explore package-name-fixer -- bun start \"$(pwd)\"",
-    "autocommit": "npm explore @dobuki/autocommit -- bun run autocommit \"$(pwd)\"",
-    "np": "bun run build && bun run build:example && bun run make-repo-ssh && bun run autocommit && np"
+    "np": "bun run build && bun run build:example && bun run make-repo-ssh && bun run autocommit && np",
+    "auto-publish": "npm explore @dobuki/auto-publish -- bun run auto-publish \"$(pwd)\""
   },
   "publishConfig": {
     "access": "public"
@@ -48,7 +47,7 @@
     "dist"
   ],
   "devDependencies": {
-    "@dobuki/autocommit": "^1.0.8",
+    "@dobuki/auto-publish": "^1.0.7",
     "@types/bun": "^1.0.4",
     "@types/jest": "^29.5.6",
     "@types/mocha": "^10.0.3",
